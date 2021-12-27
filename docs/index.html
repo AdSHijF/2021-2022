@@ -1,9 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+  <meta charset="utf-8">
   <title>AdSHijF/2021-2022</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://adshijf.github.io/2021-2022/favicon.png" rel="icon">
+  <link rel="apple-touch-icon" href="https://adshijf.github.io/2021-2022/apple-touch-icon.png">
+  <link rel="canonical" href="https://adshijf.github.io/2021-2022">
+  <meta name="author" content="AdSHijF">
+  <link rel="stylesheet" href="https://adshijf.github.io/2021-2022/static/css/bootstrap.readable.min.css" type="text/css">
+  <link href="https://adshijf.github.io/2021-2022/static/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://adshijf.github.io/2021-2022/static/css/pygments/native.css" rel="stylesheet">
+  <link href="https://adshijf.github.io/2021-2022/static/css/typogrify.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://adshijf.github.io/2021-2022/static/css/style.css" type="text/css">
+  <link href="https://adshijf.github.io/2021-2022/static/css/ekko-lightbox.css" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://adshijf.github.io/2021-2022/static/css/mapbox.css" type="text/css">
+  <link href="https://adshijf.github.io/2021-2022/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="AdSHijF/2021-2022 ATOM Feed">
+  <style type="text/css">
+  img.ctidy1 {border-width:0}
+  </style>
 </head>
 <body>
-  <p>First commit of an <code>index.html</code> file. More to follow...</p>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a href="https://adshijf.github.io/2021-2022/" class="navbar-brand">AdSHijF/2021-2022</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="container copy">
+    <div id="mapbox"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script> 
+    <script>
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWRzaGlqZiIsImEiOiJja3hwZDFjemcwOG1hMnBvMjU1aTNxYTl4In0.tyGKi8O7nFYnAYUz1Dyhsw';
+    const map = new mapboxgl.Map({
+    container: 'mapbox', // container ID
+    style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL
+    center: [-16.5,16.5], // starting position [lng, lat]
+    zoom: 4 // starting zoom
+    });
+    </script>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-xs-10">
+          © AdSHijF · Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>, <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>, <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+          <p><small><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"><img alt="Creative Commons License" class="ctidy1" src="//i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> Content licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>, except where indicated otherwise.</small></p>
+        </div>
+        <div class="col-xs-2">
+          <p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://adshijf.github.io/2021-2022/static/js/jquery.min.js"></script> 
+  <script src="https://adshijf.github.io/2021-2022/static/js/bootstrap.min.js"></script> 
+  <script src="https://adshijf.github.io/2021-2022/static/js/respond.min.js"></script> 
+  <script src="https://adshijf.github.io/2021-2022/static/js/ekko-lightbox.min.init.js"></script> 
 </body>
 </html>
