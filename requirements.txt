@@ -1,3 +1,4 @@
 black
+mdx_linkify
 pelican[markdown]
 typogrify
