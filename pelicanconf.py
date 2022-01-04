@@ -13,7 +13,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 TYPOGRIFY = True
 
-ARTICLE_ORDER_BY = "date"
+ARTICLE_ORDER_BY = "reversed-date"
 
 ARTICLE_URL = "posts/{slug}/"
 ARTICLE_SAVE_AS = "posts/{slug}/index.html"
