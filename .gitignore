@@ -1,2 +1,4 @@
 __pycache__/
 content/photos/
+pelican-plugins/
+pelican-themes/
