@@ -239,3 +239,9 @@ figure.floatcenter, .align-center {
 .gap-left {
   margin-left: 10px;
 }
+
+/* Adjust font size of blockquotes. */
+blockquote {
+  font-size: small;
+  color: #666;
+}
