@@ -4,7 +4,7 @@ title: Karte
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiYWRzaGlqZiIsImEiOiJja3hwZDFjemcwOG1hMnBvMjU1aTNxYTl4In0.tyGKi8O7nFYnAYUz1Dyhsw';
-    const loc = new mapboxgl.LngLat(-14.94, 12.89);
+    const loc = new mapboxgl.LngLat(-16.25, 12.57);
     const map = new mapboxgl.Map({
     container: 'bigmapbox', // container ID
     style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL
