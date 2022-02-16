@@ -1,4 +1,6 @@
 __pycache__/
-content/photos/
+content/audio/
+content/image/
+content/video/
 pelican-plugins/
 pelican-themes/

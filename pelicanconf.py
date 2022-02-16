@@ -54,7 +54,7 @@ THEME = "pelican-themes/pelican-bootstrap3/"
 BOOTSTRAP_THEME = "readable"
 BOOTSTRAP_FLUID = False
 
-STATIC_PATHS = ["static", "photos"]
+STATIC_PATHS = ["static", "audio", "image", "video"]
 THEME_STATIC_PATHS = []
 
 EXTRA_PATH_METADATA = {
