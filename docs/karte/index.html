@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="https://adshijf.github.io/2021-2022/apple-touch-icon.png">
   <link rel="canonical" href="https://adshijf.github.io/2021-2022/karte/">
   <meta name="author" content="AdSHijF">
-  <meta name="description" content="mapboxgl.accessToken = 'pk.eyJ1IjoiYWRzaGlqZiIsImEiOiJja3hwZDFjemcwOG1hMnBvMjU1aTNxYTl4In0.tyGKi8O7nFYnAYUz1Dyhsw'; const loc = new mapboxgl.LngLat(-17.44, 14.67); const map = new mapboxgl.Map({ container: 'bigmapbox', // container ID style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL center: loc, zoom: 4 // starting zoom }); new mapboxgl.Marker({ color: &quot;#f0f&quot; }).setLngLat(loc).addTo(map); map.on('load', () =&gt; { map.addSource …">
+  <meta name="description" content="mapboxgl.accessToken = 'pk.eyJ1IjoiYWRzaGlqZiIsImEiOiJja3hwZDFjemcwOG1hMnBvMjU1aTNxYTl4In0.tyGKi8O7nFYnAYUz1Dyhsw'; const loc = new mapboxgl.LngLat(-24.50, 14.90); const map = new mapboxgl.Map({ container: 'bigmapbox', // container ID style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL center: loc, zoom: 4 // starting zoom }); new mapboxgl.Marker({ color: &quot;#881798&quot; }).setLngLat(loc).addTo(map); map.on('load', () =&gt; { map.addSource …">
   <link rel="stylesheet" href="https://adshijf.github.io/2021-2022/static/css/bootstrap.readable.min.css" type="text/css">
   <link href="https://adshijf.github.io/2021-2022/static/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://adshijf.github.io/2021-2022/static/css/pygments/native.css" rel="stylesheet">
@@ -56,7 +56,7 @@
             <script>
 
             mapboxgl.accessToken = 'pk.eyJ1IjoiYWRzaGlqZiIsImEiOiJja3hwZDFjemcwOG1hMnBvMjU1aTNxYTl4In0.tyGKi8O7nFYnAYUz1Dyhsw';
-            const loc = new mapboxgl.LngLat(-17.44, 14.67);
+            const loc = new mapboxgl.LngLat(-24.50, 14.90);
             const map = new mapboxgl.Map({
             container: 'bigmapbox', // container ID
             style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL
@@ -64,24 +64,62 @@
             zoom: 4 // starting zoom
             });
             new mapboxgl.Marker({
-            color: "#f0f"
+            color: "#881798"
             }).setLngLat(loc).addTo(map);
             map.on('load', () => {
-            map.addSource('route', {
+            map.addSource('route1', {
             type: 'geojson',
-            data: 'https://adshijf.github.io/2021-2022/static/gps/route.geojson'
+            data: 'https://adshijf.github.io/2021-2022/static/gps/2021_West_Africa.geojson'
+            });
+            map.addSource('route2', {
+            type: 'geojson',
+            data: 'https://adshijf.github.io/2021-2022/static/gps/2022_Cape_Vert.geojson'
+            });
+            map.addSource('flight1', {
+            type: 'geojson',
+            data: 'https://adshijf.github.io/2021-2022/static/gps/2022-02-28_Air_Senegal_HC207.geojson'
             });
 
             map.addLayer({
-            'id': 'route',
+            'id': 'route2',
             'type': 'line',
-            'source': 'route',
+            'source': 'route2',
             'layout': {
             'line-join': 'round',
             'line-cap': 'round'
             },
             'paint': {
-            'line-color': '#f0f',
+            'line-color': '#881798',
+            'line-width': 6,
+            'line-opacity': 0.5
+            }
+            });
+
+            map.addLayer({
+            'id': 'route1',
+            'type': 'line',
+            'source': 'route1',
+            'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+            },
+            'paint': {
+            'line-color': '#881798',
+            'line-width': 6,
+            'line-opacity': 0.5
+            }
+            });
+
+            map.addLayer({
+            'id': 'flight1',
+            'type': 'line',
+            'source': 'flight1',
+            'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+            },
+            'paint': {
+            'line-color': '#0037DA',
             'line-width': 6,
             'line-opacity': 0.5
             }
