@@ -25,7 +25,7 @@ title: Karte
       });
       map.addSource('flight1', {
         type: 'geojson',
-        data: 'https://adshijf.github.io/2021-2022/static/gps/2022-02-28_Air_Senegal_HC207.geojson'
+        data: 'https://adshijf.github.io/2021-2022/static/gps/2022_Flights.geojson'
       });
 
       map.addLayer({
